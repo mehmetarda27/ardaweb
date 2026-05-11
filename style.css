@@ -469,6 +469,12 @@ h3 { font-size: 1.06rem; font-weight: 850; }
     linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(241, 245, 249, 0.7)),
     linear-gradient(90deg, #E2E8F0 0 22%, transparent 22% 28%, #CBD5E1 28% 54%, transparent 54% 62%, #E2E8F0 62%);
 }
+.project-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .cover-two { background: linear-gradient(135deg, #F8FAFC, #E0ECFF); }
 .cover-three { background: linear-gradient(135deg, #DCE8FF, #FFFFFF); }
 .cover-four { background: linear-gradient(135deg, #EEF4FF, #DCE8FF); }
