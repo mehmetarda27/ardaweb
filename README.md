@@ -49,12 +49,12 @@ Kurulum gerektirmez. Saf HTML, CSS ve JavaScript ile hazırlanmıştır.
 
 Delivera Express, Entegrasyon POS, Berber Randevu Sistemi ve Haber Web yalnızca isim ve açıklama olarak gösterilmiştir. Bu projelerin dosyalarına dokunulmamıştır.
 
-## UX ve Form AkÄ±ÅŸÄ±
+## UX ve Form Akışı
 
-- TÃ¼m teklif butonlarÄ± iletiÅŸim formuna smooth scroll yapar.
-- WhatsApp butonlarÄ± `0531 466 89 27` numarasÄ± iÃ§in wa.me baÄŸlantÄ±sÄ±na gider.
-- Instagram baÄŸlantÄ±larÄ± `mehmetardastudio` hesabÄ±na baÄŸlanÄ±r.
-- Ä°letiÅŸim formu Formspree `https://formspree.io/f/xeevzely` endpointine sayfa yenilenmeden POST edilir.
-- BaÅŸarÄ±lÄ± ve hatalÄ± gÃ¶nderim durumlarÄ± kullanÄ±cÄ±ya mesaj olarak gÃ¶sterilir.
-- Mobil menÃ¼ link tÄ±klanÄ±nca otomatik kapanÄ±r.
-- Scroll konumuna gÃ¶re aktif menÃ¼ linki vurgulanÄ±r.
+- Tüm teklif butonları iletişim formuna smooth scroll yapar.
+- WhatsApp butonları `0531 466 89 27` numarası için wa.me bağlantısına gider.
+- Instagram bağlantıları `mehmetardastudio` hesabına bağlanır.
+- İletişim formu Formspree `https://formspree.io/f/xeevzely` endpointine sayfa yenilenmeden POST edilir.
+- Başarılı ve hatalı gönderim durumları kullanıcıya mesaj olarak gösterilir.
+- Mobil menü link tıklanınca otomatik kapanır.
+- Scroll konumuna göre aktif menü linki vurgulanır.
