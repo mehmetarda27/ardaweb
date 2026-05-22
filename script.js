@@ -18,8 +18,6 @@ const modalText = document.getElementById("modalText");
 const modalPoints = document.getElementById("modalPoints");
 const modalWhatsapp = document.getElementById("modalWhatsapp");
 const preloader = document.getElementById("preloader");
-const counters = document.querySelectorAll("[data-count]");
-const statsGrid = document.querySelector(".stats-grid");
 
 const phoneNumber = "905314668927";
 const whatsappLink = (message) => `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
@@ -81,51 +79,6 @@ document.querySelectorAll(".reveal").forEach((element, index) => {
   element.style.transitionDelay = `${Math.min(index * 16, 110)}ms`;
   revealObserver.observe(element);
 });
-
-const animateCounter = (element) => {
-  if (element.dataset.counted === "true") return;
-  element.dataset.counted = "true";
-
-  const target = Number(element.dataset.count || 0);
-  const duration = 1200;
-  const start = performance.now();
-
-  const tick = (now) => {
-    const progress = Math.min((now - start) / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    element.textContent = `${Math.round(target * eased)}+`;
-
-    if (progress < 1) requestAnimationFrame(tick);
-  };
-
-  requestAnimationFrame(tick);
-};
-
-if (statsGrid && counters.length) {
-  const runCountersIfVisible = () => {
-    const rect = statsGrid.getBoundingClientRect();
-    const isVisible = rect.top < window.innerHeight * 0.86 && rect.bottom > 0;
-    if (!isVisible) return;
-
-    counters.forEach(animateCounter);
-    window.removeEventListener("scroll", runCountersIfVisible);
-  };
-
-  const counterObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        counters.forEach(animateCounter);
-        counterObserver.unobserve(entry.target);
-      });
-    },
-    { threshold: 0.25 }
-  );
-
-  counterObserver.observe(statsGrid);
-  window.addEventListener("scroll", runCountersIfVisible, { passive: true });
-  window.setTimeout(runCountersIfVisible, 500);
-}
 
 const sections = [...document.querySelectorAll("main section[id], main [id='contact']")];
 const menuLinks = [...(navLinks?.querySelectorAll('a[href^="#"]') || [])];
