@@ -1,28 +1,9 @@
-<svg width="360" height="104" viewBox="0 0 360 104" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="166" height="56" viewBox="0 0 166 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">ArdaWeb Logo</title>
-  <desc id="desc">ArdaWeb için özgün AW monogram logo ve marka yazısı.</desc>
-  <defs>
-    <linearGradient id="awMark" x1="15" y1="14" x2="110" y2="88" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#14F1D9"/>
-      <stop offset="0.48" stop-color="#2F7DFF"/>
-      <stop offset="1" stop-color="#8B5CF6"/>
-    </linearGradient>
-    <linearGradient id="awWord" x1="128" y1="22" x2="305" y2="72" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#101B35"/>
-      <stop offset="0.56" stop-color="#173B8F"/>
-      <stop offset="1" stop-color="#7C3AED"/>
-    </linearGradient>
-    <filter id="awGlow" x="-20%" y="-25%" width="145%" height="150%" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#14F1D9" flood-opacity="0.22"/>
-    </filter>
-  </defs>
-  <g filter="url(#awGlow)">
-    <path d="M17 78L39.8 25.5C42.4 19.5 50.9 19.4 53.7 25.3L78.7 78H64.9L58.6 64.1H39.4L44.5 52H53.1L47.1 38.6L30.2 78H17Z" fill="url(#awMark)"/>
-    <path d="M59.8 25H73.4L84.7 54.1L96 25H110.4L91.7 78H78.2L66.5 48.8L59.8 25Z" fill="#101B35"/>
-    <path d="M67.4 78L84.4 25H97.7L80.6 78H67.4Z" fill="url(#awMark)"/>
-    <path d="M28 84H102" stroke="url(#awMark)" stroke-width="5.5" stroke-linecap="round"/>
-    <circle cx="110" cy="24" r="5" fill="#14F1D9"/>
-  </g>
-  <text x="132" y="52" fill="url(#awWord)" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="35" font-weight="850" letter-spacing="-1.3">ArdaWeb</text>
-  <text x="134" y="75" fill="#61708A" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="10.5" font-weight="760" letter-spacing="2.7">WEB TASARIM &amp; YAZILIM</text>
+  <desc id="desc">ArdaWeb icin minimal tipografik marka logosu.</desc>
+  <text x="0" y="31" fill="#0F172A" font-family="Inter, Manrope, Avenir Next, Segoe UI, Arial, sans-serif" font-size="29" letter-spacing="-1">
+    <tspan font-weight="600">Arda</tspan><tspan font-weight="830">Web</tspan>
+  </text>
+  <circle cx="143.5" cy="17" r="3.2" fill="#2563EB"/>
+  <text x="1.5" y="46" fill="#64748B" font-family="Inter, Manrope, Segoe UI, Arial, sans-serif" font-size="8.2" font-weight="700" letter-spacing="1.32">WEB TASARIM &amp; YAZILIM</text>
 </svg>
